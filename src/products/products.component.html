@@ -1,0 +1,64 @@
+
+
+<h5 class="bg-warning text-center">Event Binding</h5>
+    <form>
+        <div class="form-group">
+        <input (keyup)="onSearch($event)"
+        required type="text" class="form-control">
+    </div>
+    </form>
+<p 
+*ngIf="string"
+class ="alert alert-warning" [innerText]="string"></p>
+
+<h5 class="bg-warning text-center">Two Way Data Binding</h5>
+<hr>
+<h5 class="bg-warning text-center">Products</h5>
+<div class="form-group">
+    <input #product type="text" class="form-control">
+</div>
+<button class="btn btn-sm bg-info text-white my-2" (click)="onProduct(product)">Add Product</button>
+<p *ngIf="string1"
+[innerText]="string1"
+class="alert alert-warning">
+</p>
+
+
+<h5 class="bg-warning text-center">Students</h5>
+<div class="form-group">
+    <input #students
+    required type="text" class="form-control">
+</div>
+<button class="btn btn-sm bg-info text-white my-2" (click)="onStudent(students)">Add student</button>
+
+<p 
+*ngIf="string2"
+[innerText]="string2"
+class="alert alert-warning">
+</p>
+
+<h5 class="bg-warning text-center">Users</h5>
+<div class="form-group">
+    <input #users
+    required type="text" class="form-control">
+</div>
+<button class="btn btn-sm bg-info text-white my-2" (click)="onUser(users)">Add Users</button>
+
+<p *ngIf="string3"
+[innerText]="string3"
+class="alert alert-warning">
+</p>
+
+
+<h5 class="bg-warning text-center">Employee</h5>
+<div class="form-group">
+    <input #Empolyees
+    type="text" class="form-control">
+</div>
+<button class="btn btn-sm bg-info text-white my-2" (click)="onEmployee(Empolyees)">Add Employee</button>
+
+<p *ngIf="string4"
+ [innerText]="string4"
+class="alert alert-warning">
+</p>
+
